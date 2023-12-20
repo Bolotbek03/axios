@@ -10,24 +10,14 @@ const Layout = () => {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-
-    try {
-      // Отправляем POST-запрос на сервер с введенными данными
-      const response = await axios.post("http://localhost:8000/products", {
-        image: image,
-        name: productName,
-        price: productPrice,
-      });
-
-      console.log("Данные успешно добавлены", response.data);
-
-      // Очищаем поля формы после успешного добавления
-      setImage("");
-      setProductName("");
-      setProductPrice("");
-    } catch (error) {
-      console.error("Ошибка при добавлении данных", error);
-    }
+    const response = await axios.post("http://localhost:8000/products", {
+      image: image,
+      name: productName,
+      price: productPrice,
+    });
+    setImage("");
+    setProductName("");
+    setProductPrice("");
   };
 
   return (

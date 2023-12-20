@@ -5,16 +5,13 @@ import { Link } from "react-router-dom";
 const UsersPage = () => {
   const [products, setProducts] = useState([]);
   const API = "http://localhost:8000/products";
-
   useEffect(() => {
     axios.get(API).then((res) => {
       setProducts(res.data);
     });
   }, []);
-
   const handleDelete = async (id) => {
     await axios.delete(`${API}/${id}`);
-
     setProducts(products.filter((product) => product.id !== id));
   };
 
