@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "productName": "Сейф",
+      "productImage": "https://xiaomi.kg/media/products/c19c5de33e9031512ab72215af666ad411120_1615898237.jpg",
+      "productPrice": "12312",
+      "id": 1
+    },
+    {
+      "productName": "Айфон",
+      "productImage": "https://xiaomi.kg/media/products/c19c5de33e9031512ab72215af666ad411120_1615898237.jpg",
+      "productPrice": "12312",
+      "id": 2
+    },
+    {
+      "productName": "Миксер",
+      "productImage": "https://xiaomi.kg/media/products/c19c5de33e9031512ab72215af666ad411120_1615898237.jpg",
+      "productPrice": "12312",
+      "id": 3
+    },
+    {
+      "productName": "Миксер",
+      "productImage": "https://xiaomi.kg/media/products/c19c5de33e9031512ab72215af666ad411120_1615898237.jpg",
+      "productPrice": "12312",
+      "id": 4
+    }
+  ]
+}
